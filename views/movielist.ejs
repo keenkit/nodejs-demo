@@ -1,0 +1,35 @@
+<% include header.ejs %>
+<ol class="breadcrumb">
+    <li><a href="/home">HOME</a></li>
+    <li><a href="/movie/add">ADD MOVIE</a></li>
+</ol>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span8">
+            <div ng-app="" ng-controller="movieListController">
+                <table class="table">
+                    <tr>
+                        <th class="col-xs-2">Title</th>
+                        <th class="col-xs-1">Year</th>
+                        <th class="col-xs-4">Pic</th>
+                    </tr>
+                    <tr ng-repeat="movie in movies">
+                        <td><a href="{{movie.title}}">{{ movie.title }}</a></td>
+                        <td>{{ movie.year }}</td>
+                        <td><img src="{{ movie.images.small }}" /></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function movieListController($scope,$http) {
+        var url="json/movielist";
+        $http.get(url).success( function(response) {
+            $scope.movies = response;
+        });
+    }
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+<% include footer.ejs %>

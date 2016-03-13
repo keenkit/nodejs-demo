@@ -1,0 +1,69 @@
+{
+  "rating": {
+    "max": 10,
+    "average": 9.4,
+    "stars": "50",
+    "min": 0
+  },
+  "genres": [
+    "剧情",
+    "动作",
+    "犯罪"
+  ],
+  "title": "这个杀手不太冷",
+  "casts": [
+    {
+      "alt": "http://movie.douban.com/celebrity/1025182/",
+      "avatars": {
+        "small": "https://img1.doubanio.com/img/celebrity/small/8833.jpg",
+        "large": "https://img1.doubanio.com/img/celebrity/large/8833.jpg",
+        "medium": "https://img1.doubanio.com/img/celebrity/medium/8833.jpg"
+      },
+      "name": "让·雷诺",
+      "id": "1025182"
+    },
+    {
+      "alt": "http://movie.douban.com/celebrity/1054454/",
+      "avatars": {
+        "small": "https://img1.doubanio.com/img/celebrity/small/2274.jpg",
+        "large": "https://img1.doubanio.com/img/celebrity/large/2274.jpg",
+        "medium": "https://img1.doubanio.com/img/celebrity/medium/2274.jpg"
+      },
+      "name": "娜塔莉·波特曼",
+      "id": "1054454"
+    },
+    {
+      "alt": "http://movie.douban.com/celebrity/1010507/",
+      "avatars": {
+        "small": "https://img1.doubanio.com/img/celebrity/small/104.jpg",
+        "large": "https://img1.doubanio.com/img/celebrity/large/104.jpg",
+        "medium": "https://img1.doubanio.com/img/celebrity/medium/104.jpg"
+      },
+      "name": "加里·奥德曼",
+      "id": "1010507"
+    }
+  ],
+  "collect_count": 874484,
+  "original_title": "Léon",
+  "subtype": "movie",
+  "directors": [
+    {
+      "alt": "http://movie.douban.com/celebrity/1031876/",
+      "avatars": {
+        "small": "https://img3.doubanio.com/img/celebrity/small/47146.jpg",
+        "large": "https://img3.doubanio.com/img/celebrity/large/47146.jpg",
+        "medium": "https://img3.doubanio.com/img/celebrity/medium/47146.jpg"
+      },
+      "name": "吕克·贝松",
+      "id": "1031876"
+    }
+  ],
+  "year": "1994",
+  "images": {
+    "small": "https://img3.doubanio.com/view/movie_poster_cover/ipst/public/p511118051.jpg",
+    "large": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p511118051.jpg",
+    "medium": "https://img3.doubanio.com/view/movie_poster_cover/spst/public/p511118051.jpg"
+  },
+  "alt": "http://movie.douban.com/subject/1295644/",
+  "id": "1295644"
+}

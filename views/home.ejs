@@ -1,0 +1,17 @@
+<% include header.ejs %>
+<div class="indexContainer">
+    <div class="jumbotron">
+        <div class="indexInnerContainer">
+            <h2>Hello, <%= user.username %>, you are in! dude, what next you wanna do?</h2>
+            <p>
+                <url>
+                    <li><h4><a href="movie/add">Try to add one movie?</a></h4></li>
+                    <li><h4><a href="movie/movielist">View the movie list added.</a></h4></li>
+                    <li><h4><a href="http://mongoosejs.com/docs/guide.html" target="_blank">See the amazing mongoose!</a></h4></li>
+                </url>
+            </p>
+            <p><a class="btn btn-primary btn-lg" href="/logout" role="button">LOG OUT</a></p>
+        </div>
+    </div>
+</div>
+<% include footer.ejs %>

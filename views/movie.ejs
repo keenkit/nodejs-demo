@@ -1,0 +1,27 @@
+<% include header.ejs %>
+<ol class="breadcrumb">
+    <li><a href="/home">HOME</a></li>
+    <li><a href="/movie/movielist">MOVIE LIST</a></li>
+</ol>
+<div class="container-fluid">
+    <form class="form-horizontal" method="post">
+        <div class="form-group">
+            <h3>Add new movie (JSON)</h3>
+        </div>
+        <div class="form-group" id="samples">
+            <button id="c_sample0" type="button" class="btn">Use Sample1</button>
+            <button id="c_sample1" type="button" class="btn">Use Sample2</button>
+            <button id="c_sample2" type="button" class="btn">Use Sample3</button>
+        </div>
+        <div class="form-group">
+            <textarea id="c_editor" name="c_editor" class="col-md-8" rows="15"></textarea>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-4">
+                <button id="c_save" type="button" class="btn btn-primary">Save to Mongo</button>
+            </div>
+        </div>
+    </form>
+
+</div>
+<% include footer.ejs %>

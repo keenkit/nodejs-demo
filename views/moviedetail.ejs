@@ -1,0 +1,38 @@
+<% include header.ejs %>
+<ol class="breadcrumb">
+    <li><a href="/home">HOME</a></li>
+    <li><a href="/movie/add">ADD MOVIE</a></li>
+    <li><a href="/movie/movielist">MOVIE LIST</a></li>
+</ol>
+<div class="container-fluid">
+    <form class="form-horizontal" method="post">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="<%=movie.images.large%>" alt="<%=movie.title%>" />
+            </div>
+            <div class="col-md-4">
+                <p>
+                    <h2><label id="lbTitle"><%=movie.title%></label></h2>(<%=movie.year%>)
+                </p>
+                <p>
+                    <a href="<%=movie.alt%>">Douban Link</a>
+                </p>
+                <p>
+                    <h3>Directors:</h3>
+                </p>
+                <p>
+                    <img src="<%=movie.directors[0].avatars[0].small%>"
+                        alt="<%=movie.directors[0].name%>" /><br>
+                    <%=movie.directors[0].name%>
+                </p>
+                <p>
+                    <h2>Raiting:<%=movie.rating.average%></h2>
+                </p>
+                <p>
+                    <button id="c_remove" type="button" class="btn btn-primary">Delete</button>
+                </p>
+            </div>
+        </div>
+    </form>
+</div>
+<% include footer.ejs %>
