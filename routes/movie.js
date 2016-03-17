@@ -2,21 +2,12 @@ var express = require('express');
 var router = express.Router();
 var Movie = require('./../models/Movie.js');
 
-function viewAddMovie(req, res, next){
-    if(req.params.name){//update
-        return res.render('movie', {
-            title:req.params.name+'|basicPython',
-            label:'Edit the movie:'+req.params.name,
-            movie:req.params.name
-        });
-    } else {
-        return res.render('movie',{
-            title:'Add new movie | basicPython',
-            label:'Add new movie',
-            movie:false
-        });
-    }
-    next();
+function viewAddMovie(req, res){
+    return res.render('movie',{
+        title:'Add new movie | basicPython',
+        label:'Add new movie',
+        movie:false
+    });
 }
 
 function viewMovieDetail(req, res){
@@ -74,8 +65,8 @@ router.post('/add', postAddMovie);
 router.get('/movielist', viewMovieList);    // Need to be over than /:name
 router.get('/json/movielist',viewMovieListJSON);    // Need to be over than /json/:name
 router.post('/remove', removeMovie);
-router.get('/:name',viewMovieDetail);
 router.get('/json/:name',viewMovieJSON);
+router.get('/:name',viewMovieDetail);
 
 
 module.exports = router;
